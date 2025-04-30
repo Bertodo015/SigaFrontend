@@ -1,0 +1,52 @@
+.celula {
+    margin: 4px 4px;
+    background-color: green;
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+
+.celula.xis::before,
+.celula.xis::after {
+    top: 42%;
+    content: "";
+    height: 15px;
+    width: 90px;
+    background: white;
+    position: absolute;
+}
+.celula.xis::before{
+    transform: rotate(45deg);
+}
+.celula.xis::after {
+    transform: rotate(-45deg);
+}
+
+.celula.circulo::before,
+  .celula.circulo::after{
+    content: "";
+    left: 10%;
+    top: 13%;
+    height: 70px;
+    width: 70px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .celula.hoverDoCirculo:not(.xis):not(.circulo):hover::after{
+    content: "O";
+    font-size:80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .celula.hoverDoXis:not(.xis):not(.circulo):hover::after{
+    content: "X";
+    font-size:80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }

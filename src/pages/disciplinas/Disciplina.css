@@ -1,0 +1,71 @@
+h1{
+    padding: 5%; 
+    margin: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+nav, main, section{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav{
+    flex: 10%;
+}
+
+main{
+    flex: 60%;
+}
+
+section{
+    flex: 20%;
+}
+
+li:hover{
+    background-color: lightblue;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    
+}
+
+li{
+   border-bottom-color:  black;
+   border-bottom-style: solid;
+   border-bottom-width: 1px;
+   width: 100%;
+   padding: 10px;
+   margin-top: 10px;
+
+}
+
+table{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+tr,td,th{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.btn {
+    border:1px black solid;
+    border-radius: 10px;
+    background-color: grey;
+    padding: 5px;
+}

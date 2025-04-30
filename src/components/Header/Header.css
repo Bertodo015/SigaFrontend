@@ -1,0 +1,15 @@
+header{
+    background-color: #0A5517; 
+    margin: 0 auto;   
+    height: 200px; 
+    background-image: radial-gradient(#19882C,#025310); 
+    color: white;    
+    /*border-width: 1px;
+    border-style:solid;*/
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 35px;
+    padding-left: 50px;
+    font-size: 25px;
+}

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Celula from "../Celula/Celula.tsx";
 import "./Tabuleiro.css";
-import BotaoReiniciar from "../BotaoReiniciar/BotaoReiniciar.tsx";
 
 export default function Tabuleiro() {
     //celulas  =documento.querySelectorAll(".celula");
@@ -16,7 +15,7 @@ export default function Tabuleiro() {
             return;
         }
         //let novoTabuleiro = [celulas[0], celulas[1], celulas[2], celulas[3], celulas[4], celulas[5], celulas[6], celulas[7], celulas[8]];
-        let novoTabuleiro = [...celulas];
+        const novoTabuleiro = [...celulas];
 
         if (vezX == true) {
             novoTabuleiro[i] = "xis"

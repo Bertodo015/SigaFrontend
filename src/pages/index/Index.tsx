@@ -4,7 +4,7 @@ export default function Index() {
     return (
         <main>
             <h2 className="outstanding-title">Cadastre-se</h2>
-            <form method="post">
+            <form method="post" action={"/home"} >
                 <p>
                     Cadastre-se como
                     <select name="perfil" >

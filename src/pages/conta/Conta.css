@@ -6,7 +6,7 @@ input, select{
 .perfil{
     text-align: center;
 }
-.perfil > img{
+#imgFoto{
     height:100px;
     width:100px;
     border-radius: 50%;

@@ -10,6 +10,7 @@ import Disciplinas from "../pages/disciplinas/Disciplinas";
 import Index from "../pages/index/Index";
 import Home from "../pages/home/Home";
 import Boletim from "../pages/boletim/Boletim";
+import Conta from "../pages/conta/Conta";
 //import Conta from "../pages/conta/Conta";
 
 export default function AppRoutes() {
@@ -17,7 +18,7 @@ export default function AppRoutes() {
         <Routes>
             <Route path="/" element={
                 <>
-                    <Header titulo="Index" />
+                    <Header titulo="Index" login={false} />
                     <div className="content">
                         <Nav logado={false} />
                         <Index />
@@ -29,7 +30,7 @@ export default function AppRoutes() {
 
             <Route path="/home" element={
                 <>
-                    <Header titulo="Home" />
+                    <Header titulo="Home" login={true} />
                     <div className="content">
                         <Nav logado={true} />
                         <Home />
@@ -41,7 +42,7 @@ export default function AppRoutes() {
 
             <Route path="/jogo" element={
                 <>
-                    <Header titulo="Jogo" />
+                    <Header titulo="Jogo" login={true} />
                     <div className="content">
                         <Nav logado={true} />
                         <Jogo />
@@ -53,7 +54,7 @@ export default function AppRoutes() {
 
             <Route path="/biblioteca" element={
                 <>
-                    <Header titulo="Biblioteca" />
+                    <Header titulo="Biblioteca" login={true} />
                     <div className="content">
                         <Nav logado={true} />
                         <Biblioteca />
@@ -65,7 +66,7 @@ export default function AppRoutes() {
 
             <Route path="/disciplinas" element={
                 <>
-                    <Header titulo="Disciplinas" />
+                    <Header titulo="Disciplinas" login={true} />
                     <div className="content">
                         <Nav logado={true} />
                         <Disciplinas />
@@ -77,7 +78,7 @@ export default function AppRoutes() {
 
             <Route path="/boletim" element={
                 <>
-                    <Header titulo="Boletim" />
+                    <Header titulo="Boletim" login={true} />
                     <div className="content">
                         <Nav logado={true} />
                         <Boletim />
@@ -87,9 +88,9 @@ export default function AppRoutes() {
                 </>
             } />
 
-            {/*<Route path="/conta" element={
+            <Route path="/conta" element={
                 <>
-                    <Header titulo="Boletim" />
+                    <Header titulo="Conta" login={true} />
                     <div className="content">
                         <Nav logado={true} />
                         <Conta />
@@ -97,7 +98,7 @@ export default function AppRoutes() {
                     </div>
                     <Footer />
                 </>
-            } />*/}
+            } />
         </Routes>
     )
 }

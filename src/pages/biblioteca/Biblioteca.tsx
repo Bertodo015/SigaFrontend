@@ -1,4 +1,4 @@
-import './Biblioteca.css';
+import './Biblioteca.scss';
 
 export default function Biblioteca() {
     return (

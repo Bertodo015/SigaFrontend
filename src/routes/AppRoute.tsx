@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Jogo from "../pages/jogo/Jogo";
 import Header from "../components/Header/Header";
-import './AppRoute.css'
+import './AppRoute.scss'
 import Nav from "../components/Nav/Nav";
 import Footer from "../components/Footer/Footer";
 import Section from "../components/Section/Section";
@@ -12,6 +12,7 @@ import Home from "../pages/home/Home";
 import Boletim from "../pages/boletim/Boletim";
 import Conta from "../pages/conta/Conta";
 //import Conta from "../pages/conta/Conta";
+import '../styles/main.scss';
 
 export default function AppRoutes() {
     return (

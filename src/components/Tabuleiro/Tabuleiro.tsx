@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Celula from "../Celula/Celula.tsx";
-import "./Tabuleiro.css";
+import "./Tabuleiro.scss";
 
 export default function Tabuleiro() {
     //celulas  =documento.querySelectorAll(".celula");

@@ -1,4 +1,4 @@
-import './Section.css';
+import './Section.scss';
 
 export default function Section() {
     return (

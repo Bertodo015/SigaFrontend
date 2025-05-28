@@ -1,4 +1,5 @@
-import './Header.css';
+import { Link } from 'react-router-dom';
+import './Header.scss';
 
 type HeaderProps = {
     titulo: string;
@@ -11,10 +12,12 @@ export default function Header({titulo, login}: HeaderProps) {
             <header>
                 <h1>Sistema Acadêmico - {titulo}</h1>
                 
-                <form id="login" action="/home">
-                    <input type="email" placeholder="e-mail" name="email" required />
-                    <input type="password" placeholder="senha" id="senha3" name="senha" required />
-                    <button type="submit">Logar</button>
+                <form id="login">
+                    <input type="email" placeholder="e-mail" />
+                    <input type="password" placeholder="senha" />
+                    <Link to="/home">
+                        <button>Logar</button>
+                    </Link>
                 </form>
             </header>
         )

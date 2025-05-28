@@ -1,4 +1,4 @@
-import './Conta.css';
+import './Conta.scss';
 import perfil from '../../img/perfil.png';
 
 export default function Conta() {

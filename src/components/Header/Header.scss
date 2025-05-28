@@ -1,0 +1,32 @@
+@use '../../styles/variables';
+
+header{
+    background-color: variables.$primary-color; 
+    margin: 0 auto;   
+    height: 200px; 
+    background-image: radial-gradient(variables.$secondary-color, variables.$third-color); 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 35px;
+    padding-left: 50px;
+    font-size: 25px;
+}
+
+h1 {
+    margin-bottom: 35px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #1e8f2f;
+    font-weight: 700;
+    font-size: 1rem;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+    cursor: pointer;
+}

@@ -1,4 +1,4 @@
-import './Boletim.css';
+import './Boletim.scss';
 
 export default function Boletim() {
     return(

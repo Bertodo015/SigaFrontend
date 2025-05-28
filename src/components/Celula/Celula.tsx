@@ -1,4 +1,4 @@
-import "./Celula.css";
+import "./Celula.scss";
 
 function Celula(props: {nomeClasse: string | null;  vezDoXis: boolean; onClick:() => void}) {
     let classe = 'celula';

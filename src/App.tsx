@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import './components/Celula/Celula.tsx';
 
 function App() {

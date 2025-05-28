@@ -1,5 +1,5 @@
 import Tabuleiro from "../../components/Tabuleiro/Tabuleiro";
-import './Jogo.css';
+import './Jogo.scss';
 
 export default function Jogo() {
     return (

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import perfil from '../../img/perfil.png';
-import './Nav.css';
+import './Nav.scss';
 
 export default function Nav(props: { logado: boolean }) {
     if (props.logado == false) {

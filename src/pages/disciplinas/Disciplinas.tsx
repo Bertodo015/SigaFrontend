@@ -1,4 +1,4 @@
-import './Disciplina.css';
+import './Disciplina.scss';
 
 export default function Disciplinas() {
     return (

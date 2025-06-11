@@ -4,15 +4,28 @@
     justify-content: center;
     align-items: stretch;
 }
+
 @mixin botao-tema($tema) {
-    @if $tema == light {
+    @if $tema == claro {
         background-color: white;
         color: black;
-    } @else if $tema == dark {
+    }
+
+    @else if $tema == escuro {
         background-color: black;
         color: white;
-    } @else {
-        background-color: gray;
-        color: white;
     }
+
+    @else {
+        background-color: white;
+        color: black;
+    }
+}
+
+@mixin botao-estilo($cor, $fundo) {
+    color: $cor;
+    background-color: $fundo;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
 }

@@ -1,7 +1,52 @@
+
+@use 'styles/mixins' as *;
+
 body{
   margin: 0px;
 }
 *{
   box-sizing: border-box;
   
+}
+
+
+
+.temas {
+    padding-top: 10px;
+}
+
+input[type="button"] {
+    margin-left: 5px;
+}
+
+.app-tema {
+  min-height: 100vh;
+  padding: 1rem;
+
+  &.tema-claro {
+    @include tema(claro);
+  }
+  &.tema-escuro {
+    @include tema(escuro);
+  }
+  &.tema-impressao {
+    @include tema(impressao);
+  }
+
+}
+
+.tema-claro {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.tema-escuro {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.tema-impressao {
+  background-color: #ffffff;
+  color: #000000;
+  filter: grayscale(100%);  // força tudo em escala de cinza
 }

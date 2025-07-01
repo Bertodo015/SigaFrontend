@@ -5,22 +5,32 @@
     align-items: stretch;
 }
 
-@mixin botao-tema($tema) {
-    @if $tema == claro {
-        background-color: white;
-        color: black;
-    }
+$temas: (
+  claro: (
+    bg: #ffffff,
+    text: #000000
+  ),
+  escuro: (
+    bg: #000000,
+    text: #ffffff
+  ),
+  impressao: (
+    bg: #ffffff,
+    text: #000000,
+    filter: grayscale(100%)
+  )
+);
+@mixin tema($nome) {
+  $cfg: map-get($temas, $nome);
+  background-color: map-get($cfg, bg);
+  color: map-get($cfg, text);
 
-    @else if $tema == escuro {
-        background-color: black;
-        color: white;
-    }
-
-    @else {
-        background-color: white;
-        color: black;
-    }
+  // só aplica filter se estiver definido no mapa
+  @if map-has-key($cfg, filter) {
+    filter: map-get($cfg, filter);
+  }
 }
+
 
 @mixin botao-estilo($cor, $fundo) {
     color: $cor;

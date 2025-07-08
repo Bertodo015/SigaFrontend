@@ -15,7 +15,7 @@ export default function Tema() {
     )
 }*/
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Tema.scss';
 
 type TemaType = 'claro' | 'escuro' | 'impressao';
